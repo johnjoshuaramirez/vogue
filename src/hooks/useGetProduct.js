@@ -8,7 +8,6 @@ export const useGetProduct = productId => {
 
   const getProduct = async () => {
     setIsLoading(true);
-    setError(null);
 
     try {
       const response = await fetch(`${BASE_URL}/api/products/${productId}`);
