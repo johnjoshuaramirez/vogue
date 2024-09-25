@@ -80,6 +80,7 @@ const ProductsPage = () => {
 
     // Update the search query in the URL
     const params = new URLSearchParams();
+    
     if (category) params.append("category", category);
     if (searchText) params.append("search", searchText);
 

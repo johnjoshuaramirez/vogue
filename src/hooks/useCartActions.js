@@ -68,7 +68,7 @@ export const useCartActions = () => {
     setError(null);
 
     try {
-      const response = await fetch(`/api/cart/increment`, {
+      const response = await fetch(`${BASE_URL}/api/cart/increment`, {
         method: "PATCH",
         body: JSON.stringify(cartItem),
         headers: {
@@ -96,7 +96,7 @@ export const useCartActions = () => {
     setError(null);
 
     try {
-      const response = await fetch(`/api/cart/decrement`, {
+      const response = await fetch(`${BASE_URL}/api/cart/decrement`, {
         method: "PATCH",
         body: JSON.stringify(cartItem),
         headers: {

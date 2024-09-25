@@ -3,9 +3,10 @@ import { useNavigate, useParams } from "react-router-dom";
 import { useAuthContext } from "../hooks/useAuthContext";
 import { useGetProduct } from "../hooks/useGetProduct";
 import { useUpdateCart } from "../hooks/useUpdateCart";
-import LoadingScreen from "../components/LoadingScreen";
 import { BsBag } from "react-icons/bs";
 import toast, { Toaster } from "react-hot-toast";
+import LoadingScreen from "../components/LoadingScreen";
+import BASE_URL from "../utils/config";
 
 const DetailsPage = () => {
   const { id } = useParams();
@@ -49,7 +50,7 @@ const DetailsPage = () => {
         position: "top-center"
       });
 
-      const response = await fetch("/api/cart/", {
+      const response = await fetch(`${BASE_URL}/api/cart/`, {
         method: "POST",
         body: JSON.stringify(item),
         headers: {
