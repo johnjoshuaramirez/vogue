@@ -2,7 +2,10 @@ import { Link } from "react-router-dom";
 
 const CategoryItem = ({ imageUrl, path, name }) => {
   return (
-    <Link to={{ pathname: "/api/products", search: `?category=${path}` }} className="isolate relative rounded overflow-hidden aspect-[3/4]">
+    <Link
+      to={{ pathname: "/api/products", search: `?category=${path}` }}
+      className="isolate relative rounded overflow-hidden aspect-[3/4]"
+    >
       <img
         src={imageUrl}
         alt={path}

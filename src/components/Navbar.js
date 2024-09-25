@@ -8,8 +8,8 @@ import { useAuthContext } from "../hooks/useAuthContext";
 
 const Navbar = () => {
   const { state } = useContext(CartContext);
-  const { signout } = useSignout();
   const { user } = useAuthContext();
+  const { signout } = useSignout();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {

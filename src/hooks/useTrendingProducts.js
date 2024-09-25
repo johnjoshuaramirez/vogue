@@ -5,13 +5,15 @@ export const useTrendingProducts = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
 
+  const BASE_URL = "https://vogue-api.onrender.com/"
+
   useEffect(() => {
     const fetchTrendingProducts = async () => {
       setIsLoading(true);
       setError(null);
 
       try {
-        const response = await fetch("/api/products/trending");
+        const response = await fetch(BASE_URL + "/api/products/trending");
 
         if (!response.ok) {
           throw new Error("Failed to fetch trending products");

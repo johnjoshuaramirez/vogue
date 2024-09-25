@@ -48,9 +48,7 @@ const Footer = () => {
 
         {/* Footer Bottom */}
         <div className="border-t border-gray-300 pt-8 mt-12">
-          <p className="text-center">
-            &copy; 2024 Vogue. All rights reserved.
-          </p>
+          <p className="text-center">&copy; 2024 Vogue. All rights reserved.</p>
         </div>
       </div>
     </footer>
