@@ -1,5 +1,5 @@
 {
-  "proxy": "https://vogue-api.onrender.com/:10000/",
+  "proxy": "https://vogue-api.onrender.com/",
   "name": "client",
   "version": "0.1.0",
   "private": true,
