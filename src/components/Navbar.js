@@ -154,21 +154,11 @@ const Navbar = () => {
             {user && (
               <button
                 type="button"
-                className="text-sm text-center bg-violet-600 rounded py-2 w-full text-white hover:bg-violet-700"
+                className="text-sm text-center bg-black rounded py-2 w-full text-white hover:bg-gray-900"
                 onClick={signout}
               >
                 Sign out
               </button>
-            )}
-            {user && (
-              <div className="flex items-center gap-2">
-                <button
-                  type="button"
-                  className="text-sm text-center bg-violet-600 rounded py-2 w-full text-white hover:bg-violet-700"
-                >
-                  Sign out
-                </button>
-              </div>
             )}
           </div>
         </ul>
