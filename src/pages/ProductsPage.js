@@ -83,7 +83,7 @@ const ProductsPage = () => {
     if (category) params.append("category", category);
     if (searchText) params.append("search", searchText);
 
-    navigate({ pathname: `${BASE_URL}/api/products`, search: params.toString() });
+    navigate({ pathname: `/api/products`, search: params.toString() });
   };
 
   return (
@@ -111,7 +111,7 @@ const ProductsPage = () => {
           <ul className="flex items-center gap-3 mb-4 overflow-x-auto sm:overflow-x-visible py-2">
             <li>
               <Link
-                to={`${BASE_URL}/api/products`}
+                to={`/api/products`}
                 className={`rounded py-2 px-5 transition-colors text-sm ${
                   !category
                     ? "bg-black text-white"
@@ -123,7 +123,7 @@ const ProductsPage = () => {
             </li>
             <li>
               <Link
-                to={{ pathname: `${BASE_URL}/api/products`, search: "?category=baby" }}
+                to={{ pathname: `/api/products`, search: "?category=baby" }}
                 className={`rounded py-2 px-5 transition-colors text-sm ${
                   category === "baby"
                     ? "bg-black text-white"
@@ -135,7 +135,7 @@ const ProductsPage = () => {
             </li>
             <li>
               <Link
-                to={{ pathname: `${BASE_URL}/api/products`, search: "?category=kids" }}
+                to={{ pathname: `/api/products`, search: "?category=kids" }}
                 className={`rounded py-2 px-5 transition-colors text-sm ${
                   category === "kids"
                     ? "bg-black text-white"
@@ -147,7 +147,7 @@ const ProductsPage = () => {
             </li>
             <li>
               <Link
-                to={{ pathname: `${BASE_URL}/api/products`, search: "?category=men" }}
+                to={{ pathname: `/api/products`, search: "?category=men" }}
                 className={`rounded py-2 px-5 transition-colors text-sm ${
                   category === "men"
                     ? "bg-black text-white"
@@ -159,7 +159,7 @@ const ProductsPage = () => {
             </li>
             <li>
               <Link
-                to={{ pathname: `${BASE_URL}/api/products`, search: "?category=women" }}
+                to={{ pathname: `/api/products`, search: "?category=women" }}
                 className={`rounded py-2 px-5 transition-colors text-sm ${
                   category === "women"
                     ? "bg-black text-white"
