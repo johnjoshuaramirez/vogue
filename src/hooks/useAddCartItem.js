@@ -6,7 +6,6 @@ export const useAddCartItem = () => {
   const [isLoading, setIsLoading] = useState(null);
   const navigate = useNavigate()
 
-
   const addCartItem = async (item, user) => {
     setIsLoading(true);
     setError(null);
@@ -17,7 +16,7 @@ export const useAddCartItem = () => {
       dispatch({ type: "ADD_TO_CART", payload: item });
     }
 
-    const response = await fetch("/cart", {
+    const response = await fetch(`${BASE_URL}/cart`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(item)

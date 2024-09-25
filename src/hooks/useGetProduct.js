@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import BASE_URL from "../utils/config";
 
 export const useGetProduct = productId => {
   const [product, setProduct] = useState({});
@@ -10,7 +11,7 @@ export const useGetProduct = productId => {
     setError(null);
 
     try {
-      const response = await fetch(`/api/products/${productId}`);
+      const response = await fetch(`${BASE_URL}/api/products/${productId}`);
 
       if (!response.ok) {
         throw new Error("Failed to fetch product details");

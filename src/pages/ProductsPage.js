@@ -20,12 +20,14 @@ const ProductsPage = () => {
 
       try {
         let url = "/api/products";
+
         if (category || search) {
           const params = new URLSearchParams();
           if (category) params.append("category", category);
           if (search) params.append("search", search);
           url += `?${params.toString()}`;
         }
+
         const response = await fetch(url);
 
         if (!response.ok) {
@@ -33,7 +35,7 @@ const ProductsPage = () => {
         }
 
         const data = await response.json();
-        console.log(data);
+        
         setProducts(data);
       } catch (err) {
         console.error("Error fetching products:", err);

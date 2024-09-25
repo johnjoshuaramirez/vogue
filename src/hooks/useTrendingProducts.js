@@ -12,7 +12,7 @@ export const useTrendingProducts = () => {
       setError(null);
 
       try {
-        const response = await fetch(BASE_URL + "api/products/trending");
+        const response = await fetch(`${BASE_URL}/api/products/trending`);
 
         if (!response.ok) {
           throw new Error("Failed to fetch trending products");

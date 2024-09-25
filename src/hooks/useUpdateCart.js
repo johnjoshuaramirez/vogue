@@ -1,5 +1,6 @@
 import { useAuthContext } from "./useAuthContext";
 import { useCartContext } from "./useCartContext";
+import BASE_URL from "../utils/config";
 
 export const useUpdateCart = () => {
   const { user } = useAuthContext()
@@ -7,7 +8,7 @@ export const useUpdateCart = () => {
 
   const updateCart = async () => {
     try {
-      const response = await fetch("/api/cart/", {
+      const response = await fetch(`${BASE_URL}/api/cart/`, {
         headers: { Authorization: `Bearer ${user?.token}` }
       });
 

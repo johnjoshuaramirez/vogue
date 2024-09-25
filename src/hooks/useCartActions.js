@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useCartContext } from "./useCartContext";
 import { useAuthContext } from "./useAuthContext";
+import BASE_URL from "../utils/config";
 
 export const useCartActions = () => {
   const { dispatch } = useCartContext();
@@ -15,9 +16,7 @@ export const useCartActions = () => {
     setError(null);
 
     try {
-      console.log("token", user);
-      console.log("order", orderDetails);
-      const response = await fetch(`/api/cart/checkout`, {
+      const response = await fetch(`${BASE_URL}/api/cart/checkout`, {
         method: "POST",
         body: JSON.stringify(orderDetails),
         headers: {
@@ -43,7 +42,7 @@ export const useCartActions = () => {
     setError(null);
 
     try {
-      const response = await fetch(`/api/cart/`, {
+      const response = await fetch(`${BASE_URL}/api/cart/`, {
         method: "DELETE",
         body: JSON.stringify(cartItem),
         headers: {

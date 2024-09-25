@@ -1,5 +1,6 @@
 import { useAuthContext } from "./useAuthContext";
 import { useCurrentUserContext } from "./useCurrentUserContext";
+import BASE_URL from "../utils/config";
 
 export const useGetUser = () => {
   const { user } = useAuthContext()
@@ -7,7 +8,7 @@ export const useGetUser = () => {
 
   const getUser = async () => {
     try {
-      const response = await fetch("/api/auth/", {
+      const response = await fetch(`${BASE_URL}/api/auth/`, {
         headers: { Authorization: `Bearer ${user?.token}` }
       });
 

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useAuthContext } from "./useAuthContext";
 import { useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import BASE_URL from "../utils/config";
 
 export const useSignin = () => {
   const [error, setError] = useState(null);
@@ -20,7 +21,7 @@ export const useSignin = () => {
       position: "top-center"
     });
 
-    const response = await fetch("/api/auth/signin", {
+    const response = await fetch(`${BASE_URL}/api/auth/signin`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ email, password })
