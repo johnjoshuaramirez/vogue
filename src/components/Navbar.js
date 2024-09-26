@@ -5,11 +5,14 @@ import { Link } from "react-router-dom";
 import { HiStar } from "react-icons/hi2";
 import { BsHandbag } from "react-icons/bs";
 import { useAuthContext } from "../hooks/useAuthContext";
+import { useSignin } from "../hooks/useSignin";
 
 const Navbar = () => {
   const { state } = useContext(CartContext);
   const { user } = useAuthContext();
   const { signout } = useSignout();
+  const { signin } = useSignin();
+
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -159,6 +162,23 @@ const Navbar = () => {
               >
                 Sign out
               </button>
+            )}
+            {!user && (
+              <>
+                <Link
+                  to="/auth/signup"
+                  className="text-sm text-center bg-black rounded py-2 w-full text-white hover:bg-gray-900"
+                  
+                >
+                  Sign up
+                </Link>
+                <Link
+                  to="auth/signin"
+                  className="text-sm text-center bg-black rounded py-2 w-full text-white hover:bg-gray-900"
+                >
+                  Sign in
+                </Link>
+              </>
             )}
           </div>
         </ul>

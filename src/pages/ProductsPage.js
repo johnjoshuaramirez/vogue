@@ -24,8 +24,10 @@ const ProductsPage = () => {
 
         if (category || search) {
           const params = new URLSearchParams();
+
           if (category) params.append("category", category);
           if (search) params.append("search", search);
+
           url += `?${params.toString()}`;
         }
 
