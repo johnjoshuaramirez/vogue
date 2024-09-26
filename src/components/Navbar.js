@@ -5,13 +5,11 @@ import { Link } from "react-router-dom";
 import { HiStar } from "react-icons/hi2";
 import { BsHandbag } from "react-icons/bs";
 import { useAuthContext } from "../hooks/useAuthContext";
-import { useSignin } from "../hooks/useSignin";
 
 const Navbar = () => {
   const { state } = useContext(CartContext);
   const { user } = useAuthContext();
   const { signout } = useSignout();
-  const { signin } = useSignin();
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -103,7 +101,7 @@ const Navbar = () => {
           fill="none"
           strokeWidth="0"
           viewBox="0 0 24 24"
-          className="text-2xl text-slate-600 hover:text-violet-600 transition-colors"
+          className="text-2xl text-slate-600 hover:text-gray-600 transition-colors"
           height="1em"
           width="1em"
           xmlns="http://www.w3.org/2000/svg"
@@ -123,7 +121,7 @@ const Navbar = () => {
           <li>
             <Link
               to={{ pathname: "/api/products", search: "?category=men" }}
-              className="text-sm hover:text-violet-600 transition-colors"
+              className="text-sm hover:text-gray-600 transition-colors"
             >
               Men
             </Link>
@@ -131,7 +129,7 @@ const Navbar = () => {
           <li>
             <Link
               to={{ pathname: "/api/products", search: "?category=women" }}
-              className="text-sm hover:text-violet-600 transition-colors"
+              className="text-sm hover:text-gray-600 transition-colors"
             >
               Women
             </Link>
@@ -139,7 +137,7 @@ const Navbar = () => {
           <li>
             <Link
               to={{ pathname: "/api/products", search: "?category=kids" }}
-              className="text-sm hover:text-violet-600 transition-colors"
+              className="text-sm hover:text-gray-600 transition-colors"
             >
               Kids
             </Link>
@@ -147,7 +145,7 @@ const Navbar = () => {
           <li>
             <Link
               to={{ pathname: "/api/products", search: "?category=baby" }}
-              className="text-sm hover:text-violet-600 transition-colors"
+              className="text-sm hover:text-gray-600 transition-colors"
             >
               Baby
             </Link>
