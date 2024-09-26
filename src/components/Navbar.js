@@ -1,13 +1,13 @@
-import { useContext, useState } from "react";
-import { CartContext } from "../context/CartContext";
+import { useState } from "react";
 import { useSignout } from "../hooks/useSignout";
 import { Link } from "react-router-dom";
 import { HiStar } from "react-icons/hi2";
 import { BsHandbag } from "react-icons/bs";
 import { useAuthContext } from "../hooks/useAuthContext";
+import { useCartContext } from "../hooks/useCartContext";
 
 const Navbar = () => {
-  const { state } = useContext(CartContext);
+  const { state } = useCartContext()
   const { user } = useAuthContext();
   const { signout } = useSignout();
 
