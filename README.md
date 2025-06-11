@@ -18,7 +18,7 @@
 - **Item Selection & Checkout Preparation**  
   Select specific products and prepare them for checkout.
 
-  ## ⚙️ Application Specifications
+## ⚙️ Application Specifications
 
 - **Frontend: React with Tailwind CSS**  
   The user interface is built using React, providing a component-based, scalable architecture. Tailwind CSS ensures a clean, responsive design that adapts seamlessly across devices.
