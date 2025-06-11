@@ -30,7 +30,7 @@
   MongoDB is used for persistent data storage in managing user records and products.
 
 - **Authentication & Security**  
-  User registration and login are secured using **bcrypt** for password hashing. Authenticated access is managed through protected routes, ensuring only authorized users can access restricted features.
+  User registration and login are secured using **bcrypt** for password hashing. Authentication is handled using JSON Web Tokens (JWT) to securely verify user identity across sessions. Protected routes ensure that only authorized users can access restricted features.
 
 - **State Management: React Context API & Custom Hooks**  
   Application state is handled using the Context API. Custom hooks encapsulate logic for reusability and cleaner code.
@@ -68,7 +68,10 @@ Start the development server:
 npm start
 ```
 
-## 🔮 Future Improvements
+## Future Improvements
+
+- **Admin Dashboard**
+  Creating an admin dashboard to manage ecommerce orders and product listings
 
 - **Add Testing**  
   Use React Testing Library and Jest to test components and key user interactions.
