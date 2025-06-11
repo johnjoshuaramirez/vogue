@@ -42,6 +42,7 @@ Vogue is a simple eCommerce site with product listings, cart functionality, and 
 [![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#)
 [![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white)](#)
 [![React Router](https://img.shields.io/badge/React%20Router-%23CA4245.svg?logo=react-router&logoColor=white)](#)
+[![Axios](https://img.shields.io/badge/Axios-5A29E4?logo=axios&logoColor=white)](#)
 [![JWT](https://img.shields.io/badge/JWT-black?logo=jsonwebtokens&logoColor=white)](#)
 [![Visual Studio Code](https://custom-icon-badges.demolab.com/badge/VS%20Code-0078d7.svg?logo=vsc&logoColor=white)](#)
 
