@@ -71,7 +71,7 @@ npm start
 ## Future Improvements
 
 - **Admin Dashboard**
-  Creating an admin dashboard to manage ecommerce orders and product listings
+  Create an admin dashboard to manage ecommerce orders and product listings with admin access only.
 
 - **Add Testing**  
   Use React Testing Library and Jest to test components and key user interactions.
