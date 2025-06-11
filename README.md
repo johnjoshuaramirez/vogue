@@ -7,7 +7,7 @@
   Browse all available items using a list/detail layout to view full product information.
 
 - **Search, Filter & Sort**  
-  Quickly find products with keyword search, filter by category or attributes, and sort by price, name, or date.
+  Quickly find products with keyword search, filter by category butes, and sort by price and date.
 
 - **Shopping Cart Functionality**  
   Add items to a shopping cart and view all selected items in a single place.
