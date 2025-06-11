@@ -67,3 +67,17 @@ Start the development server:
 ```bash
 npm start
 ```
+
+## 🔮 Future Improvements
+
+- **Add Testing**  
+  Use React Testing Library and Jest to test components and key user interactions.
+
+- **Convert to TypeScript**  
+  Migrate the project to React with TypeScript for better type safety and code quality.
+
+- **Improve Error Handling**  
+  Add basic error boundaries and user-friendly error messages.
+
+- **Performance Optimization**  
+  Lazy load components and improve state handling where needed.
