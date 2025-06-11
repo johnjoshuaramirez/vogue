@@ -47,13 +47,13 @@
 Clone the repository:
 
 ```bash
-git clone https://github.com/kennyestrellaworks/vegeburg.git
+git clone https://github.com/johnjoshuaramirez/vogue.git
 ````
 
 Navigate into the project directory:
 
 ```bash
-cd vegeburg
+cd vogue
 ```
 
 Install the dependencies:
@@ -65,5 +65,5 @@ npm install
 To start the development server:
 
 ```bash
-npm run dev
+npm start
 ```
