@@ -35,6 +35,9 @@
 - **State Management: React Context API & Custom Hooks**  
   Application state (e.g., user session, cart data) is handled using the Context API. Custom hooks encapsulate logic for reusability and cleaner code structure.
 
+- **Routing: React Router**  
+  Page navigation is handled using React Router, enabling seamless transitions between views without full page reloads. This allows users to navigate across public and protected pages.
+  
 - **Protected Routes**  
   Specific routes in the frontend are guarded based on user authentication status, preventing unauthorized access to sensitive pages or data.
 
