@@ -44,9 +44,6 @@
 
 ## Installation & Run
 
-````markdown
-## Installation
-
 Clone the repository:
 
 ```bash
@@ -64,10 +61,6 @@ Install the dependencies:
 ```bash
 npm install
 ```
-
----
-
-## 🚀 Running the Project
 
 To start the development server:
 
