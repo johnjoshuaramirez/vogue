@@ -38,5 +38,7 @@
 - **Routing: React Router**  
   Page navigation is handled using React Router, enabling seamless transitions between views without full page reloads. This allows users to navigate across public and protected pages.
 
+## 🧰 Tools & Technology
 
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=000)](#) [![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#)
 
